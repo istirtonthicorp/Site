@@ -33,7 +33,7 @@
       <li id="sexierclick"><a href="#sexier">Sexier</a></li>
       <li id="strongerclick"><a href="#stronger">Stronger</a></li>
       <li id="smarterclick"><a href="#smarter">Smarter</a></li>
-      <li id="6060click"><a href="5050.html">60 Dealers in 60 States</a></li>
+      <!--<li id="6060click"><a href="5050.html">60 Dealers in 60 States</a></li>-->
     </ul>
   </div>
 </div>
@@ -60,7 +60,7 @@
         <source src="demo.mp4" type="video/mp4" />
         <source src="demo.ogv" type="video/ogg" />
         <source src="demo.webm" type="video/webm" />
-      Your browser doesn't support HTML5 video. Here's a <a href="#">link</a> to download the video.</video>
+      Your browser doesn't support HTML5 video.</video>
       <div class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></div>
       </div>
     </div>
@@ -84,8 +84,9 @@
       <div class="medium-12 columns herounit">
         <p class="paragraph text-left">The best-selling soft tri-fold cover just got better! Extang's reinvigorated soft tri-fold cover has a host of new features but remains very easy to install and still simple to use. </p>
       </div>
-      <div class="row">
-        <div class="small-12 columns"><a class="large button" href="5050.html">Dealer Map</a></div>
+
+      <div class="row redbtn">
+        <div class="small-12 columns"><a id="sexierclick2" class="large button" href="#sexier">Browse New Features</a></div>
       </div>
     </div>
 
@@ -202,19 +203,70 @@ less physical effort to operate.</p>
 </div>
 </div> -->
 
-<!--<footer class="footer">
+<footer class="footer">
 <div class="row">
-  <div class="large-7 columns">   
-    <img src="img/trifecta_logo.png">
-  </div>
-  <div class="large-5 columns">
-    <i class="icons step fi-social-instagram size-12"></i>
-  </div>
+<div class="large-3 columns">
+  <p>© Extang Corporation 2015
+A Truck Hero, Inc. Company
+5400 South State Road
+Ann Arbor, MI 48108
+</br>
+</br>
+Phone: 800-877-2588
+</br>
+Fax: 734-677-8409</p>
 </div>
-</footer> -->
 
-<footer>
-<div class="row">
+<div class="large-3 columns">
+  <a href="http://www.extang.com/find-dealer.php">Find A Dealer</a>
+</br>
+<a href="http://www.extang.com/product-video.php">Videos</a>
+</br>
+<a href="http://www.extang.com/compare-products.php">Compare Products</a>
+</br>
+<a href="http://www.extang.com/applications.php">Applications</a>
+</br>
+<a href="http://www.extang.com/international-applications.php">International Applications</a>
+</br>
+<a href="http://www.extang.com/for-dealer.php">For Dealers</a>
+</br>
+<a href="http://www.extang.com/estore/category/special-offers">Special Offers</a>
+</br>
+
+</div>
+
+
+<div class="large-3 columns">
+  <a href="http://www.extang.com/about.php">About Us</a>
+</br>
+<a href="http://www.extang.com/catalogue-request.php">Customer Service</a>
+</br>
+<a href="http://www.extang.com/privacy-policy.php">Privacy Policy</a>
+</br>
+<a href="http://www.extang.com/guarantee-warranty.php">Guarantee/Waranty</a>
+</div>
+
+
+<div class="large-3 columns">
+  <h4>PRODUCTS</h4>
+<a href="http://www.extang.com/estore/category/images/pdf/images/pdf/EX_Catalog2014_LoResF.pdf">Product Catalog</a>
+</br>
+<a href="http://www.extang.com/category.php?category=folding">Folding Tonneaus</a>
+</br>
+<a href="http://www.extang.com/category.php?category=roll-up">Roll-Up Tonneaus</a>
+</br>
+<a href="http://www.extang.com/category.php?category=snap-style">Snap-Style/Snappless Tonneaus</a>
+</br>
+<a href="hhttp://www.extang.com/category.php?category=toolbox">Toolbox Tonneaus</a>
+</br>
+<a href="http://www.extang.com/category.php?category=accessories">Accessories</a>
+</br>
+
+</div>
+</footer> 
+
+
+<!--<div class="row">
   <h4 class="text-center">
     STAY UP TO DATE ON ALL THINGS 2.0!
   </h4>
@@ -232,10 +284,17 @@ less physical effort to operate.</p>
 <div class="row">
   <div class="large-6 small-6 columns text-right style12"><a href="https://www.instagram.com/extangcovers/" target="_blank"><i class="fi-social-instagram style3"></i></a></div>
   <div class="large-6 small-6 columns style12"><a href="https://www.facebook.com/extang/" target="_blank"><i class="fi-social-facebook style3"></i></a></div>
-</div>
+</div>-->
 
     <script type="text/javascript">
+
       $("#sexierclick").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#sexier").offset().top
+    }, 2000);
+});
+
+       $("#sexierclick2").click(function() {
     $('html, body').animate({
         scrollTop: $("#sexier").offset().top
     }, 2000);
@@ -260,6 +319,7 @@ less physical effort to operate.</p>
 });
 
 });
+
     </script>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>

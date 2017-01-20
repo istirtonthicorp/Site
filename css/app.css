@@ -17,6 +17,12 @@ html {
   padding-top: 100px;
 }
 
+.redbtn ul li{
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .title-bar {
   background: #333;
   padding: 0.9rem; }
@@ -302,7 +308,7 @@ top: -125px;
 
 footer{
  background-color: #171617;
- padding-bottom: 40px;
+ padding-bottom: 60px;
 }
 
 footer a{

@@ -84,10 +84,21 @@
         <p class="paragraph text-left">The best-selling soft tri-fold cover just got better! Extang's reinvigorated soft tri-fold cover has a host of new features but remains very easy to install and still simple to use. </p>
       </div>
 
-      <div class="row redbtn">
-        <div class="small-12 columns"><a id="sexierclick2" class="large button" href="#sexier">Browse New Features</a></div>
+      <!--<div class="row redbtn">
+        <div class="small-12 medium-6 large-6 columns"><a id="sexierclick2" class="large button" href="#sexier">Browse New Features</a></div>
+        <div class="small-12 medium-6 large-6 columns"><a id="sexierclick2" class="large button" href="#sexier">Watch The Video</a></div>
       </div>
-    </div>
+    </div>-->
+
+
+    <div class="row redbtn">
+    <ul>
+        <li><a id="sexierclick2" class="large button" href="#sexier">Browse New Features</a></li>
+        <li><a id="sexierclick2" class="large button" href="#sexier">Watch The Video</a></li>
+        </ul>
+      </div>
+      </div>
+
 
 <div class="row text-center hero">
   <img src="img/modelsilver.jpg" alt="Trifecta 2.0 Photo on F150">
@@ -111,7 +122,7 @@
       <div class="medium-6 columns"></div>
       <div class="small-12 medium-6 columns columns">
         <div class="row labelrow">
-        <div class="text-right small-12 columns">
+        <div class="text-right small-12 columns animated fadeInRight">
         <h3>SEXIER</h3>
         <hr class="left">
         <p>The Trifecta 2.0 has softer curves and a sleek design that
@@ -138,7 +149,7 @@ tarp tension and keeps your truck looking great.</p>
         <h3>STRONGER</h3>
         <hr class="left">
         <p>The newly redesigned frame, hinges, and corners provide more
-structure strength than before. Strongest in the industry, the frame
+structural strength than before. Strongest in the industry, the frame
 is made of lightweight aircraft grade aluminum. The all new MAX hinges
 are rugged and have a double pivot design. Our exclusive snap on seals
 eliminate adhesive and remain in place for ultimate weather protection.</p>
@@ -159,7 +170,7 @@ eliminate adhesive and remain in place for ultimate weather protection.</p>
     <div class="stronger" id="smarter">
       <div class="small-12 medium-6 columns columns">
         <div class="row labelrow">
-        <div class="text-left small-12 columns">
+        <div class="text-left small-12 columns animated fadeInLeft">
         <h3>SMARTER</h3>
         <hr class="left">
         <p>The all new front Jaw-Grip Clamp and rear EZ Lock Clamp
@@ -285,42 +296,33 @@ Fax: 734-677-8409</p>
   <div class="large-6 small-6 columns style12"><a href="https://www.facebook.com/extang/" target="_blank"><i class="fi-social-facebook style3"></i></a></div>
 </div>-->
 
-    <script type="text/javascript">
+    <script>
 
-      $("#sexierclick").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#sexier").offset().top
-    }, 2000);
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 600, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
 });
-
-       $("#sexierclick2").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#sexier").offset().top
-    }, 2000);
-});
-
-      $("#strongerclick").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#stronger").offset().top
-    }, 2000);
-
-
-    $("#smarterclick").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#smarter").offset().top
-    }, 2000);
-});
-
-
-    $("#6060click").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#map").offset().top
-    }, 2000);
-});
-
-})
-
-    </script>
+</script>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
